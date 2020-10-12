@@ -13,7 +13,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 mkl-fft
-mkl-random==1.1.1
+mkl-random
 mkl-service==2.3.0
 numpy==1.18.1
 pandas==1.1.3
