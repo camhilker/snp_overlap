@@ -1,3 +1,0 @@
-conda=3.10.1=py34_0
-conda-env=2.1.4=py34_0
-requests=2.6.0=py34_0
