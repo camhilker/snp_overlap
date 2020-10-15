@@ -17,11 +17,11 @@ app.layout = html.Div([
     dcc.Graph(id='graph-with-radio'),
     dcc.RadioItems(id='overlap_set',
         options=[
-            {'label': 'Original 256', 'value': 'o256'},
+            {'label': 'Original 256 (Superpopulation level)', 'value': 'o256'},
+            {'label': 'Original 256 (Population level)', 'value': 'gda'},
             {'label': 'Microhaplotype', 'value': 'mh'},
             {'label': 'Kidd 55', 'value': 'k55'},
-            {'label': 'FrogKB', 'value': 'frog'},
-            {'label': 'Global Diversity Array', 'value': 'gda'}
+            {'label': 'FrogKB', 'value': 'frog'}
         ]
     ),
 ])
@@ -37,11 +37,11 @@ def update_figure(snp_set):
                  'count':'Number of Times in Top Features', 
                  'sig_snp_set':'Appears in SNP Set', 
                  'std_imp_value':'Variance of Importance Value',
-                 'o256':'Overlaps With Original 256 SNPs',
-                 'mh':'Overlaps With Original Microhap SNPs',
-                 'k55':'Overlaps With Original Kidd 55 SNPs',
-                 'frog':'Overlaps With FrogKB SNPs',
-                 'gda':'Overlaps with GDA SNPs'})
+                 'o256':'Overlaps With Original 256 (Superpop) SNPs',
+                 'gda':'Overlaps with Original 256 (Pop) SNPs',
+                 'mh':'Overlaps With Microhap SNPs',
+                 'k55':'Overlaps With Kidd 55 SNPs',
+                 'frog':'Overlaps With FrogKB SNPs'})
 
     fig.update_layout(transition_duration=500)
 
